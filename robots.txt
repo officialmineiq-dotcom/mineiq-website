@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://officialmineiq-dotcom.github.io/mineiq-website/sitemap.xml
