@@ -80,6 +80,80 @@
         .about-content li {
             margin-bottom: 10px;
         }
+        
+          
+        /* Founder profile */
+        .founder-profile-content {
+            display: flex;
+            align-items: center;
+            gap: 32px;
+            margin-top: 24px;
+        }
+
+        .founder-photo {
+            display: block;
+            width: 240px;
+            height: 280px;
+            flex: 0 0 240px;
+            object-fit: cover;
+            object-position: center;
+            border: 3px solid #f57c00;
+            border-radius: 16px;
+            box-shadow: 0 12px 28px rgba(16, 42, 53, 0.14);
+        }
+
+        .founder-details {
+            flex: 1;
+            min-width: 0;
+        }
+
+        .founder-details h3 {
+            margin: 0 0 8px;
+            color: #102a35;
+            font-size: 25px;
+            line-height: 1.35;
+        }
+
+        .founder-details .founder-role {
+            margin-top: 0;
+            color: #f57c00;
+            font-weight: 700;
+        }
+
+        .founder-details a {
+            display: inline-block;
+            margin-top: 8px;
+            padding: 12px 18px;
+            background: #102a35;
+            color: #ffffff;
+            text-decoration: none;
+            font-weight: 700;
+            border-radius: 8px;
+            transition: opacity 0.2s ease;
+        }
+
+        .founder-details a:hover {
+            opacity: 0.85;
+        }
+
+        @media (max-width: 600px) {
+            .founder-profile-content {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 22px;
+            }
+
+            .founder-photo {
+                width: min(100%, 280px);
+                height: 300px;
+                flex-basis: auto;
+            }
+
+            .founder-details h3 {
+                font-size: 22px;
+            }
+        }
+
 
         .about-cta {
             text-align: center;
@@ -250,19 +324,52 @@
             </p>
         </section>
 
-        <section class="about-content">
-            <h2>About the Founder</h2>
+       
+<section class="about-content founder-profile" id="founder">
+    <h2>Meet the Founder of MineIQ</h2>
+
+    <div class="founder-profile-content">
+        <img
+            src="images/Founder.png"
+            alt="Madhan B Sathya Shankar Gowda, founder of MineIQ"
+            class="founder-photo"
+            width="320"
+            height="320"
+            loading="lazy"
+        >
+
+        <div class="founder-details">
+            <h3>Madhan B Sathya Shankar Gowda</h3>
+            <p class="founder-role">Founder of MineIQ</p>
+
             <p>
-                MineIQ was founded by Madhan B Sathya Shankar Gowda with a
-                vision to bring useful digital tools and practical resources
-                closer to the mining community.
+                Madhan B Sathya Shankar Gowda founded MineIQ with a vision
+                to bring useful digital tools and practical resources closer
+                to mining students, engineers and professionals.
             </p>
+
             <p>
-                The platform is being developed around the idea that mining
-                deserves accessible, practical and purpose-built digital
-                solutions.
+                MineIQ is being developed as a Mining Engineer's Digital
+                Assistant, bringing together mining-focused tools, engineering
+                resources and digital solutions in one platform.
             </p>
-        </section>
+
+            <p>
+                His goal is to make practical mining resources more accessible
+                and help the mining community explore useful digital tools.
+            </p>
+
+            <a
+                href="https://www.linkedin.com/in/madhan-b-sathya-shankar-gowda-945483428/"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+                Connect on LinkedIn
+            </a>
+        </div>
+    </div>
+</section>
+
 
         <section class="about-cta">
             <h2>Explore MineIQ</h2>
