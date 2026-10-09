@@ -694,6 +694,77 @@ footer p {
     }
 
 }
+
+.founder-profile-link {
+    margin-top: 24px;
+}
+
+.founder-profile-link a {
+    display: inline-block;
+    color: #f57c00;
+    font-weight: 700;
+    text-decoration: none;
+    border-bottom: 2px solid #f57c00;
+    padding-bottom: 4px;
+    transition: color 0.2s ease, border-color 0.2s ease;
+}
+
+.founder-profile-link a:hover {
+    color: #102a35;
+    border-color: #102a35;
+}
+
+
+/* FAQ Section */
+#faq {
+    padding: 60px 8%;
+    background: #f5f8fa;
+    color: #102a35;
+}
+
+#faq > h2 {
+    text-align: center;
+    color: #102a35;
+    margin-bottom: 32px;
+}
+
+#faq .faq-item {
+    max-width: 900px;
+    margin: 0 auto 18px;
+    padding: 20px 24px;
+    background: #ffffff;
+    border-left: 4px solid #f57c00;
+    border-radius: 8px;
+    box-shadow: 0 3px 12px rgba(16, 42, 53, 0.07);
+}
+
+#faq .faq-item h3 {
+    color: #102a35;
+    margin: 0 0 10px;
+    font-size: 1.1rem;
+}
+
+#faq .faq-item p {
+    margin: 0;
+    line-height: 1.7;
+}
+
+#faq .faq-item a {
+    color: #b85c00;
+    font-weight: 600;
+    text-decoration: underline;
+}
+
+@media (max-width: 600px) {
+    #faq {
+        padding: 40px 5%;
+    }
+
+    #faq .faq-item {
+        padding: 16px;
+    }
+}
+
 /* Footer */
 footer {
     background: #08191f;
